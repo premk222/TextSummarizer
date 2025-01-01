@@ -30,3 +30,166 @@ Traceback (most recent call last):
     raise ParserError(None, None,
 yaml.parser.ParserError: expected '<document start>', but found '<scalar>'
   in "params.yaml", line 1, column 6
+[2025-01-01 20:46:20,330: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-01 20:46:22,135: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 20:46:22,137: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:46:22,137: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:46:22,137: INFO: common: created directory at: artifacts]
+[2025-01-01 20:46:22,142: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 20:46:25,906: INFO: data_ingestion: File is downloaded]
+[2025-01-01 20:46:26,148: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-01 20:46:26,164: INFO: main: stage Data Transformation stage initiated]
+[2025-01-01 20:46:26,164: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:46:26,164: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:46:26,164: INFO: common: created directory at: artifacts]
+[2025-01-01 20:46:26,164: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-01 20:46:38,306: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-01 20:46:38,306: INFO: main: stage Model Trainer stage initiated]
+[2025-01-01 20:46:38,312: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:46:38,316: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:46:38,318: INFO: common: created directory at: artifacts]
+[2025-01-01 20:46:38,318: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-01-01 20:47:43,766: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-01 20:47:44,390: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 20:47:44,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:47:44,401: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:47:44,401: INFO: common: created directory at: artifacts]
+[2025-01-01 20:47:44,401: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 20:47:44,401: INFO: data_ingestion: File already exits]
+[2025-01-01 20:47:44,638: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-01 20:47:44,638: INFO: main: stage Data Transformation stage initiated]
+[2025-01-01 20:47:44,655: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:47:44,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:47:44,667: INFO: common: created directory at: artifacts]
+[2025-01-01 20:47:44,667: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-01 20:47:48,486: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-01 20:47:48,486: INFO: main: stage Model Trainer stage initiated]
+[2025-01-01 20:47:48,486: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:47:48,504: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:47:48,506: INFO: common: created directory at: artifacts]
+[2025-01-01 20:47:48,506: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-01-01 20:51:10,750: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-01 20:51:11,380: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 20:51:11,384: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:51:11,384: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:51:11,384: INFO: common: created directory at: artifacts]
+[2025-01-01 20:51:11,390: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 20:51:11,390: INFO: data_ingestion: File already exits]
+[2025-01-01 20:51:11,654: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-01 20:51:11,656: INFO: main: stage Data Transformation stage initiated]
+[2025-01-01 20:51:11,659: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:51:11,668: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:51:11,670: INFO: common: created directory at: artifacts]
+[2025-01-01 20:51:11,671: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-01 20:51:13,767: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-01 20:51:13,775: INFO: main: stage Model Trainer stage initiated]
+[2025-01-01 20:51:13,778: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:51:13,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:51:13,783: INFO: common: created directory at: artifacts]
+[2025-01-01 20:51:13,784: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-01-01 20:53:24,071: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-01 20:53:24,684: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 20:53:24,688: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:53:24,695: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:53:24,696: INFO: common: created directory at: artifacts]
+[2025-01-01 20:53:24,696: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 20:53:24,697: INFO: data_ingestion: File already exits]
+[2025-01-01 20:53:24,932: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-01 20:53:24,932: INFO: main: stage Data Transformation stage initiated]
+[2025-01-01 20:53:24,938: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:53:24,948: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:53:24,949: INFO: common: created directory at: artifacts]
+[2025-01-01 20:53:24,950: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-01 20:53:26,796: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-01 20:53:26,798: INFO: main: stage Model Trainer stage initiated]
+[2025-01-01 20:53:26,803: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:53:26,806: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:53:26,806: INFO: common: created directory at: artifacts]
+[2025-01-01 20:53:26,809: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-01-01 20:54:50,548: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-01 20:54:51,146: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 20:54:51,153: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:54:51,157: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:54:51,157: INFO: common: created directory at: artifacts]
+[2025-01-01 20:54:51,159: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 20:54:51,160: INFO: data_ingestion: File already exits]
+[2025-01-01 20:54:51,413: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-01 20:54:51,421: INFO: main: stage Data Transformation stage initiated]
+[2025-01-01 20:54:51,429: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:54:51,432: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:54:51,433: INFO: common: created directory at: artifacts]
+[2025-01-01 20:54:51,434: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-01 20:54:53,467: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-01 20:54:53,467: INFO: main: stage Model Trainer stage initiated]
+[2025-01-01 20:54:53,475: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:54:53,475: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:54:53,475: INFO: common: created directory at: artifacts]
+[2025-01-01 20:54:53,480: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-01-01 20:55:20,221: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-01 20:55:20,836: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 20:55:20,843: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:55:20,843: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:55:20,843: INFO: common: created directory at: artifacts]
+[2025-01-01 20:55:20,849: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 20:55:20,849: INFO: data_ingestion: File already exits]
+[2025-01-01 20:55:21,080: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-01 20:55:21,096: INFO: main: stage Data Transformation stage initiated]
+[2025-01-01 20:55:21,097: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:55:21,111: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:55:21,111: INFO: common: created directory at: artifacts]
+[2025-01-01 20:55:21,114: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-01 20:55:23,021: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-01 20:55:23,022: INFO: main: stage Model Trainer stage initiated]
+[2025-01-01 20:55:23,026: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 20:55:23,031: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 20:55:23,032: INFO: common: created directory at: artifacts]
+[2025-01-01 20:55:23,032: INFO: common: created directory at: artifacts/model_trainer]
+[2025-01-01 20:55:23,033: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 48, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
