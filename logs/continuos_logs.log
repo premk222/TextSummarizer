@@ -1,1 +1,32 @@
 [2024-12-31 20:31:27,727: INFO: main: logging is implemented]
+[2025-01-01 19:48:02,606: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-01 19:48:02,608: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-01 19:48:02,608: ERROR: main: expected '<document start>', but found '<scalar>'
+  in "params.yaml", line 1, column 6]
+Traceback (most recent call last):
+  File "D:\MLOPS\TextSummarizer\main.py", line 12, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\config\configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\utils\common.py", line 33, in read_yaml
+    raise e
+  File "D:\MLOPS\TextSummarizer\src\textSummarizer\utils\common.py", line 27, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\yaml\composer.py", line 39, in get_single_node
+    if not self.check_event(StreamEndEvent):
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\MLOPS\TextSummarizer\nlp\lib\site-packages\yaml\parser.py", line 171, in parse_document_start
+    raise ParserError(None, None,
+yaml.parser.ParserError: expected '<document start>', but found '<scalar>'
+  in "params.yaml", line 1, column 6
